@@ -1,5 +1,3 @@
-from debug import debug_class
-DEBUG = debug_class(True)
 class Solution(object):
     def solveNQueens(self, n):   
         def isVaild(n, map, x, y):
@@ -37,6 +35,6 @@ class Solution(object):
         return ans
 if __name__== "__main__":
     a = Solution()
-    for i in range(10):
+    for i in range(6):
         print("----------"+str(i)+"----------")
         print(a.solveNQueens(i))
